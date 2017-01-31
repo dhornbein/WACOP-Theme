@@ -9,6 +9,195 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+
+    <div class="row">
+      <div class="large-12 column">
+        <h1>Cards</h1>
+        <hr>
+        <h2>Status Bar</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 column">
+        <header class="status-bar-template alert">
+          <ul class="status-bar-left">
+            <li class="item icon"></li>
+            <li class="item primary status">Primary Text</li>
+            <li class="item secondary border">Secondary text</li>
+            <li class="item secondary border">Lorem</li>
+            <li class="item secondary">Sans Border</li>
+          </ul>
+          <ul class="controls">
+            <li class="item bookmark"><a href="#"><i class="fa-flag fa"></i></a></li>
+            <li class="item bookmark"><a href="#"><i class="fa-bookmark fa"></i></a></li>
+            <li class="item bookmark"><a href="#"><i class="fa-trash fa"></i></a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+      <div class="large-4 column">
+        <header class="status-bar-template highlight">
+          <ul class="status-bar-left">
+            <li class="item primary status">Highlight</li>
+          </ul>
+          <ul class="controls">
+            <li class="item flag"><a href="#"><i class="fa-flag fa"></i></a></li>
+          </ul>
+        </header>
+      </div>
+      <div class="large-4 column">
+        <header class="status-bar-template">
+          <ul class="status-bar-left">
+            <li class="item primary status">Default</li>
+          </ul>
+          <ul class="controls">
+            <li class="item flag"><a href="#"><i class="fa-flag fa"></i></a></li>
+          </ul>
+        </header>
+      </div>
+      <div class="large-4 column">
+        <header class="status-bar-template mute">
+          <ul class="status-bar-left">
+            <li class="item primary status">Mute</li>
+          </ul>
+          <ul class="controls">
+            <li class="item flag"><a href="#"><i class="fa-flag fa"></i></a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 column">
+        <hr>
+        <h2>Alerts</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <aside class="card-alert">
+          <header class="status-bar alert">
+            <ul class="status-bar-left">
+              <li class="item icon"></li>
+              <li class="item secondary status">Active</li>
+            </ul>
+            <ul class="controls">
+              <li class="item bookmark"><i class="fa-bookmark fa"></i></li>
+            </ul>
+          </header>
+          <div class="body">
+            <h1 class="title">Alert Title</h1>
+            <p>
+              <span class="meta">Meta information</span>
+              <br>
+              <span class="meta-location">Seattle, WA; 39.12412, -13.1542</span>
+            </p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium voluptatem, dolore praesentium laudantium ad</p>
+          </div>
+          <footer class="footer">
+            <p><a href="#" class="more">Read More</a></p>
+          </footer>
+        </aside>
+      </div>
+      <div class="large-4 columns">
+        <aside class="card-alert">
+          <header class="status-bar description">
+            <ul class="status-bar-left">
+              <li class="item icon"></li>
+              <li class="item secondary status">Testing</li>
+            </ul>
+            <ul class="controls">
+              <li class="item bookmark"><i class="fa-bookmark fa"></i></li>
+            </ul>
+          </header>
+          <div class="body">
+            <h1 class="title">Alert Title</h1>
+            <p>
+              <span class="meta">Meta information</span>
+              <br>
+              <span class="meta-location">Seattle, WA; 39.12412, -13.1542</span>
+            </p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium voluptatem, dolore praesentium laudantium ad</p>
+          </div>
+          <footer class="footer">
+            <p><a href="#" class="more">Read More</a></p>
+          </footer>
+        </aside>
+      </div>
+      <div class="large-4 columns">
+        <aside class="card-alert">
+          <header class="status-bar important">
+            <ul class="status-bar-left">
+              <li class="item icon"></li>
+              <li class="item secondary status">Complete</li>
+            </ul>
+            <ul class="controls">
+              <li class="item bookmark"><i class="fa-bookmark fa"></i></li>
+            </ul>
+          </header>
+          <div class="body">
+            <h1 class="title">Alert Title</h1>
+            <p>
+              <span class="meta">Meta information</span>
+              <br>
+              <span class="meta-location">Seattle, WA; 39.12412, -13.1542</span>
+            </p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium voluptatem, dolore praesentium laudantium ad</p>
+          </div>
+          <footer class="footer">
+            <p><a href="#" class="more">Read More</a></p>
+          </footer>
+        </aside>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 column">
+        <hr>
+        <h2>Incident Event Card</h2>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="large-6 columns">
+          <aside class="card-event">
+            <header class="status-bar highlight">
+              <ul class="status-bar-left">
+                <li class="item primary status">Active</li>
+              </ul>
+              <ul class="controls">
+                <li class="item bookmark"><i class="fa-bookmark fa"></i></li>
+                <li class="item edit"><i class="fa-pencil fa"></i></li>
+              </ul>
+            </header>
+            <div class="body">
+              <h1 class="title">Event Title</h1>
+              <div class="event-date-location">
+                <div class="adr">
+                  <span class="street-address">665 3rd St</span>,
+                  <!-- <div class="extended-address">Suite 207</div> -->
+                  <span class="locality">San Francisco</span>,
+                  <span class="region">CA</span>
+                  <span class="postal-code">94107</span>
+                </div>
+                <span class="date-label">Zero hour:</span> <span class="date">Oct 26, 2016 @ 16:04</span>
+                <br>
+                <span class="date-label">Closed at:</span> <span class="date">Nov 16, 2016 @ 12:33</span>
+              </div>
+              <p class="meta">36 Incidents 298 Resources</p>
+              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium voluptatem, dolore praesentium laudantium ad</p>
+            </div>
+            <footer class="footer">
+              <p><a href="#" class="more">Read More</a></p>
+            </footer>
+          </aside>
+        </div>
+      </div>
+    </div>
     
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

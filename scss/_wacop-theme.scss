@@ -1,6 +1,50 @@
 @import "foundation/components/tabs";
 
 // =====================================
+// 0. Utility
+// =====================================
+
+@mixin icon($name:'\f041',$color:false,$margin:rem-calc(5)){
+  &::before {
+    content: $name;
+    @if $color { color: $color; }
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    margin-right: $margin;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@mixin priority-icon($type:'I') {
+  &::before {
+    color: $dark;
+    display: inline-block;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    width: 20px;
+    line-height: 20px;
+  }
+  @if $type == 'D' {
+    &::before { 
+      content: "D";
+      background-color: $green;
+      border-radius: 30px;
+    }
+  } @else if $type == 'A' {
+    @include icon($name:'\f071',$color:$red,$margin:0);
+  } @else {
+    &::before {
+      content: 'I';
+      background-color: $yellow;
+    }
+  }
+}
+
+// =====================================
 // 1. Atoms
 // =====================================
 
@@ -16,11 +60,27 @@ $gray:      #EFEFEF;
 $gray-alt:  #DDDDDD;
 $dark:      #4B4B4B;
 
-$font: $dark;
+$body-font-color: $dark;
+
+// defaults
+
+$padding: 20;
 
 // Label
-@mixin meta-label {
+@mixin meta-label($color:false,$size:rem-calc(12),$weight:$font-weight-normal){
+  font-family: $font-family-sans-serif;
+  font-size: $size;
+  @if $color { color: $color; }
+  letter-spacing: rem-calc(0.16);
   text-transform: uppercase;
+  font-weight: $weight;
+  p, ul, h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+  }
+}
+
+.meta {
+  @include meta-label;
 }
 
 // More
@@ -28,7 +88,18 @@ $font: $dark;
 @mixin read-more {
   &::before {
     content: '>> ';
+    vertical-align: text-bottom;
   }
+  @include meta-label;
+}
+
+a.more {
+  @include read-more;
+}
+
+// Location one line
+@mixin location-inline {
+  @include icon($color:$red);
 }
 
 // =====================================
@@ -42,23 +113,93 @@ $font: $dark;
 // -------------------------------------
 // Status Bar
 // Molecule that appears at the top of cards
-@mixin status-bar {
+@mixin status-bar($bkg: $dark) {
+  @include clearfix;
+  background-color: $bkg;
+  color: white;
+  padding: 0 rem-calc($padding);
+  
+  a {
+    color: white;
+    &:hover {
+      
+    }
+  }
+
   &.highlight {
-    // change bar when highlighted
+    background-color: $mint;
   }
-  &.subdue {
-    // change bar when subdued
+  &.mute {
+    background-color: #888;
   }
-  // messages
-  // appear on the left of status bar, status, type, priority, and icons
-  .msg {}
-  .msg-icon {}
-  .msg-primary {}
-  .msg-secondary {}
+  
+  // items in bar should be list items
+  ul {
+    margin: 0;
+    line-height: 2;
+    > li {
+      display: inline-block;
+      list-style: none;
+      margin-left: rem-calc(12);
+    }
+    &:first-child > li.icon:first-child {
+      margin-left: rem-calc(-10);
+    }
+  }
+
+  .item {
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .item.primary {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .item.secondary {
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
+  .item.border {
+    border-style: solid;
+    border-color: rgba(255,255,255,.25);
+    border-width: 0 1px;
+    padding: 0 rem-calc(12);
+    & + .item.border {
+      margin-left: -1pt;
+      border-left: none;
+    }
+  }
+  .item.icon {}
+
+  // Status Icons
+  &.alert .item.icon {
+    @include priority-icon($type:'A')
+  }
+  &.important .item.icon {
+    @include priority-icon($type:'I')
+  }
+  &.description .item.icon {
+    @include priority-icon($type:'D')
+  }
+
+
+  .status-bar-left {
+    float: left;
+    > li:first-child {
+      margin-left: 0;
+    }
+  }
 
   // Interactivity
   // interactive icons that appear on the right of status bar
-  .controls {}
+  .controls {
+    float: right;
+  }
+}
+
+.status-bar-template {
+  @include status-bar;
 }
 
 // -------------------------------------
@@ -74,7 +215,9 @@ $font: $dark;
   // Date Location box
   @mixin box-date-location($bkg: $gray-alt) {
     background-color: $bkg;
-    .location {}
+    .adr {
+      @include location-inline;
+    }
     .date-label {
       @include meta-label;
     }
@@ -84,7 +227,7 @@ $font: $dark;
   // Date box
   @mixin box-date($bkg: $gray-alt) {
     background-color: $bkg;
-    .label {
+    .date-label {
       @include meta-label;
     }
     .data {}
@@ -93,7 +236,7 @@ $font: $dark;
   // Location box
   @mixin location-box($bkg: $gray-alt) {
     background-color: $bkg;
-    .addr {}
+    .adr {}
     .geo-location {
       @include meta-label;
     }
@@ -107,12 +250,16 @@ $font: $dark;
 // Card
 // a box that displays information
 @mixin card {
-
+  @include clearfix;
+  background-color: $gray;
   .status-bar {
     @include status-bar;
   }
 
-  .title {}
+  .body,
+  .footer {
+    padding: 0 rem-calc($padding);
+  }
   .body {}
   .footer {}
 }
@@ -127,6 +274,13 @@ $font: $dark;
   @include card;
   .event-date-location {
     @include box-date-location;
+    padding: rem-calc($padding);
+    margin: 0 rem-calc(-$padding) rem-calc($padding);
+    .adr,
+    .date {
+      font-size: $h4-font-size;
+      font-weight: bold;
+    }
   }
 }
 
@@ -135,4 +289,8 @@ $font: $dark;
 
 .card-alert {
   @include card;
+  .meta-location {
+    @include location-inline;
+    @include meta-label;
+  }
 }
