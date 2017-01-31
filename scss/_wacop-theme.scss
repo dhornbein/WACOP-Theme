@@ -1,3 +1,4 @@
+@import "foundation/components/grid";
 @import "foundation/components/tabs";
 
 // =====================================
@@ -234,11 +235,12 @@ a.more {
   }
 
   // Location box
-  @mixin location-box($bkg: $gray-alt) {
+  @mixin box-location($bkg: $gray-alt) {
     background-color: $bkg;
     .adr {}
     .geo-location {
       @include meta-label;
+      @include location-inline;
     }
   }
 
@@ -292,5 +294,44 @@ a.more {
   .meta-location {
     @include location-inline;
     @include meta-label;
+  }
+}
+
+// -------------------------------------
+// Incident Profile Card
+
+.incident-profile {
+  @include card;
+  .incident-data {
+    @include grid-row($behavior:'nest');
+    font-size: $h5-font-size;
+    font-weight: bold;
+    margin-bottom: $paragraph-margin-bottom;
+    .box {
+      padding: rem-calc($padding / 2);
+    }
+    .incident-location {
+      @include grid-column(6);
+      .box {
+        @include box-location;
+      }
+    }
+    .incident-date {
+      @include grid-column(6);
+      .box {
+        @include box-date;
+      }
+    }
+  }
+
+  .incident-resources {
+    @include grid-row($behavior:'nest');
+    .incident-resources-rail {
+      @include grid-column(4);
+    }
+    .incident-resources-data {
+      @include grid-column(8);
+    }
+
   }
 }
