@@ -1,0 +1,138 @@
+@import "foundation/components/tabs";
+
+// =====================================
+// 1. Atoms
+// =====================================
+
+// Colors
+
+$blue:      #4D7EB9;
+$mint:      #4DB988;
+$red:       #FF5959;
+$yellow:    #E5AA07;
+$green:     #7EB94D;
+
+$gray:      #EFEFEF;
+$gray-alt:  #DDDDDD;
+$dark:      #4B4B4B;
+
+$font: $dark;
+
+// Label
+@mixin meta-label {
+  text-transform: uppercase;
+}
+
+// More
+// read more link
+@mixin read-more {
+  &::before {
+    content: '>> ';
+  }
+}
+
+// =====================================
+// 2. MOLECULES
+// =====================================
+
+// -------------------------------------
+// Tabs
+@mixin tabs {}
+
+// -------------------------------------
+// Status Bar
+// Molecule that appears at the top of cards
+@mixin status-bar {
+  &.highlight {
+    // change bar when highlighted
+  }
+  &.subdue {
+    // change bar when subdued
+  }
+  // messages
+  // appear on the left of status bar, status, type, priority, and icons
+  .msg {}
+  .msg-icon {}
+  .msg-primary {}
+  .msg-secondary {}
+
+  // Interactivity
+  // interactive icons that appear on the right of status bar
+  .controls {}
+}
+
+// -------------------------------------
+// Data Table
+
+// -------------------------------------
+// Data List
+
+// -------------------------------------
+// Date & Location
+// call out boxes
+
+  // Date Location box
+  @mixin box-date-location($bkg: $gray-alt) {
+    background-color: $bkg;
+    .location {}
+    .date-label {
+      @include meta-label;
+    }
+    .date {}
+  }
+
+  // Date box
+  @mixin box-date($bkg: $gray-alt) {
+    background-color: $bkg;
+    .label {
+      @include meta-label;
+    }
+    .data {}
+  }
+
+  // Location box
+  @mixin location-box($bkg: $gray-alt) {
+    background-color: $bkg;
+    .addr {}
+    .geo-location {
+      @include meta-label;
+    }
+  }
+
+// =====================================
+// 3. ORGANISMS
+// =====================================
+
+// -------------------------------------
+// Card
+// a box that displays information
+@mixin card {
+
+  .status-bar {
+    @include status-bar;
+  }
+
+  .title {}
+  .body {}
+  .footer {}
+}
+
+// =====================================
+// 4. TEMPLATES
+// =====================================
+
+// -------------------------------------
+// Event Card
+.card-event {
+  @include card;
+  .event-date-location {
+    @include box-date-location;
+  }
+}
+
+// -------------------------------------
+// Alert Card
+
+.card-alert {
+  @include card;
+}
