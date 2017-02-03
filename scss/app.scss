@@ -1,3 +1,45 @@
 @import "settings";
 @import "foundation";
 @import "wacop-theme";
+
+.tmp-color {
+  div {
+    width:100%;
+    height: 100px;
+  }
+  div::before {
+    content: attr(class);
+    background-color: #fafafa;
+    display: block;
+    padding: 0 5px;
+    text-transform: capitalize;
+  }
+  .blue {
+    background-color: $blue;
+  }
+  .mint {
+    background-color: $mint;
+  }
+  .red {
+    background-color: $red;
+  }
+  .yellow {
+    background-color: $yellow;
+  }
+  .green {
+    background-color: $green;
+  }
+  .gray {
+    background-color: $gray;
+  }
+  .gray-alt {
+    background-color: $gray-alt;
+  }
+  .dark {
+    background-color: $dark;
+  }
+}
+
+.tmp-status-bar {
+  @include status-bar;
+}
