@@ -40,6 +40,10 @@
   }
 }
 
+.tmp-location-inline {
+  @include location-inline;
+}
+
 .tmp-status-bar {
   @include status-bar;
 }
