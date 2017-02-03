@@ -44,6 +44,18 @@
   @include location-inline;
 }
 
+.tmp-box-date-location {
+  @include box-date-location;
+}
+
+.tmp-box-date {
+  @include box-date;
+}
+
+.tmp-box-location {
+  @include box-location;
+}
+
 .tmp-status-bar {
   @include status-bar;
 }
