@@ -251,9 +251,9 @@ a.more {
 // -------------------------------------
 // Card
 // a box that displays information
-@mixin card {
+@mixin card($bkg:$gray) {
   @include clearfix;
-  background-color: $gray;
+  background-color: $bkg;
   .status-bar {
     @include status-bar;
   }
@@ -262,8 +262,31 @@ a.more {
   .footer {
     padding: 0 rem-calc($padding);
   }
-  .body {}
+  .body {
+    padding-top: rem-calc($padding);
+  }
   .footer {}
+}
+
+// -------------------------------------
+// Data List
+// list of data
+ul.data-list,
+ul.dl {
+  list-style-type: none;
+  margin: 0;
+  li,
+  ol {
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.data-list,
+.dl {
+  .dl-item {
+
+  }
 }
 
 // =====================================
@@ -333,5 +356,18 @@ a.more {
       @include grid-column(8);
     }
 
+  }
+}
+
+// -------------------------------------
+// Notification Card
+
+.card-notification {
+  @include card($bkg:#FFF);
+  .body .desc .img {
+    max-width: 40%;
+    height: auto;
+    float: left;
+    margin: 0 rem-calc(8) rem-calc(8) 0;
   }
 }
