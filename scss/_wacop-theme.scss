@@ -210,8 +210,9 @@ a.more {
 // call out boxes
 
   // Date Location box
-  @mixin box-date-location($bkg: $gray-alt) {
+  @mixin box-date-location($bkg: $gray-alt, $padding: $padding) {
     background-color: $bkg;
+    padding: rem-calc($padding);
     .adr {
       @include location-inline;
     }
@@ -222,8 +223,9 @@ a.more {
   }
 
   // Date box
-  @mixin box-date($bkg: $gray-alt) {
+  @mixin box-date($bkg: $gray-alt, $padding: $padding) {
     background-color: $bkg;
+    padding: rem-calc($padding);
     .date-label {
       @include meta-label;
     }
@@ -231,8 +233,9 @@ a.more {
   }
 
   // Location box
-  @mixin box-location($bkg: $gray-alt) {
+  @mixin box-location($bkg: $gray-alt, $padding: $padding) {
     background-color: $bkg;
+    padding: rem-calc($padding);
     .adr {}
     .geo-location {
       @include meta-label;
@@ -294,8 +297,7 @@ ul.dl {
 .card-event {
   @include card;
   .event-date-location {
-    @include box-date-location;
-    padding: rem-calc($padding);
+    @include box-date-location($padding:$padding);
     margin: 0 rem-calc(-$padding) rem-calc($padding);
     .adr,
     .date {
@@ -326,19 +328,16 @@ ul.dl {
     font-size: $h5-font-size;
     font-weight: bold;
     margin-bottom: $paragraph-margin-bottom;
-    .box {
-      padding: rem-calc($padding / 2);
-    }
     .incident-location {
       @include grid-column(6);
       .box {
-        @include box-location;
+        @include box-location($padding:$padding / 2);
       }
     }
     .incident-date {
       @include grid-column(6);
       .box {
-        @include box-date;
+        @include box-date($padding:$padding / 2);
       }
     }
   }
