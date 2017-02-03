@@ -258,8 +258,8 @@ a.more {
     @include status-bar;
   }
 
-  .body,
-  .footer {
+  > .body,
+  > .footer {
     padding: 0 rem-calc($padding);
   }
   .body {
@@ -369,5 +369,28 @@ ul.dl {
     height: auto;
     float: left;
     margin: 0 rem-calc(8) rem-calc(8) 0;
+  }
+}
+
+// -------------------------------------
+// Post Card
+
+.card-post {
+  @include card($bkg:#FFF);
+  .body {
+    .meta-update {
+      width: 50%;
+    }
+    .meta-comments {
+      white-space: nowrap;
+    }
+  }
+
+  .card-post-comment {
+    background-color: $gray;
+    padding: rem-calc($padding);
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }
