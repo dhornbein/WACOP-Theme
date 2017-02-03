@@ -56,6 +56,10 @@
   @include box-location;
 }
 
+.tmp-card {
+  @include card;
+}
+
 .tmp-status-bar {
   @include status-bar;
 }
