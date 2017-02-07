@@ -103,6 +103,17 @@ a.more {
   @include icon($color:$red);
 }
 
+// -------------------------------------
+// Buttons
+
+.button {
+  @include button($bg:$blue,$radius:3px);
+  &.disabled, &[disabled] { 
+    @include button-style($bg:lighten($blue,30%), $disabled:true); 
+    &:hover { color: inherit; }
+  }
+}
+
 // =====================================
 // 2. MOLECULES
 // =====================================

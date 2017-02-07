@@ -14,29 +14,61 @@
     padding: 0 5px;
     text-transform: capitalize;
   }
+  div::after {
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    padding: 0 3px;
+    position: absolute;
+    text-align: center;
+  }
   .blue {
     background-color: $blue;
+    &::after {
+      content: "#{$blue}"
+    }
   }
   .mint {
     background-color: $mint;
+    &::after {
+      content: "#{$mint}"
+    }
   }
   .red {
     background-color: $red;
+    &::after {
+      content: "#{$red}"
+    }
   }
   .yellow {
     background-color: $yellow;
+    &::after {
+      content: "#{$yellow}"
+    }
   }
   .green {
     background-color: $green;
+    &::after {
+      content: "#{$green}"
+    }
   }
   .gray {
     background-color: $gray;
+    &::after {
+      content: "#{$gray}"
+    }
   }
   .gray-alt {
     background-color: $gray-alt;
+    &::after {
+      content: "#{$gray-alt}"
+    }
   }
   .dark {
     background-color: $dark;
+    &::after {
+      content: "#{$dark}"
+    }
   }
 }
 
