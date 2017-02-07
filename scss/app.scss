@@ -52,6 +52,10 @@
   @include box-date;
 }
 
+.tmp-callout {
+  @include callout;
+}
+
 .tmp-box-location {
   @include box-location;
 }

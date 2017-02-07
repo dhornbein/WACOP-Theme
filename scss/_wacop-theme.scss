@@ -248,6 +248,22 @@ a.more {
 // =====================================
 
 // -------------------------------------
+// Callout
+$callout-bg: $blue;
+
+@mixin callout($bg:$callout-bg) {
+  @include clearfix;
+  @include panel($bg:lighten($bg, 30%),$border:false);
+  border-top: 4px solid $bg;
+  .callout-left {
+    @include grid-column(6,$collapse:true);
+  }
+  .callout-right {
+    @include grid-column(6,$collapse:true);
+  }
+}
+
+// -------------------------------------
 // Card
 // a box that displays information
 @mixin card($bkg:$gray) {
@@ -291,6 +307,22 @@ ul.dl {
 // =====================================
 // 4. TEMPLATES
 // =====================================
+
+// -------------------------------------
+// Event Parent Callout
+.callout.event-parent {
+  @include callout;
+  .callout-right {
+    text-align-last: right;
+  }
+  .meta .date::after {
+    content: "|";
+    margin: 0 rem-calc(6);
+  }
+  .button {
+    margin: 0;
+  }
+}
 
 // -------------------------------------
 // Event Card
