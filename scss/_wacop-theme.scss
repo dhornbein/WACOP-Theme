@@ -45,6 +45,14 @@
   }
 }
 
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; } 
+}
+
 // =====================================
 // 1. Atoms
 // =====================================
@@ -66,6 +74,7 @@ $body-font-color: $dark;
 // defaults
 
 $padding: 20;
+
 
 // Label
 @mixin meta-label($color:false,$size:rem-calc(12),$weight:$font-weight-normal){
@@ -111,6 +120,33 @@ a.more {
   &.disabled, &[disabled] { 
     @include button-style($bg:lighten($blue,30%), $disabled:true); 
     &:hover { color: inherit; }
+  }
+
+  // Form postfix
+  &.postfix {
+    padding: $form-spacing / 2;
+    margin-left: $form-spacing / 2;
+  }
+}
+
+// -------------------------------------
+// Form Elements
+
+form label {
+  @include meta-label;
+}
+
+select {
+  background-color: $gray-alt;
+  border-color: $gray-alt;
+  border-radius: $global-radius;
+}
+
+input,
+textarea {
+  @include input-placeholder {
+    opacity: 1;
+    color: lighten($body-font-color, 40%);
   }
 }
 
@@ -253,6 +289,24 @@ a.more {
       @include location-inline;
     }
   }
+
+// -------------------------------------
+// Search Input
+
+.search {
+  input {
+    border-right-width: 0;
+    @include input-placeholder {
+      @include meta-label;
+    }
+  }
+  .search-button {
+    margin: 0;
+    @include form-element;
+    border-left-width: 0;
+    text-align: center;
+  }
+}
 
 // =====================================
 // 3. ORGANISMS
