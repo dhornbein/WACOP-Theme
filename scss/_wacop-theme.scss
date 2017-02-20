@@ -292,18 +292,28 @@ textarea {
 // -------------------------------------
 // Search Input
 
-.search {
+.search-wrapper {
+  position: relative;
   input {
-    border-right-width: 0;
+    padding-right: rem-calc(30);
     @include input-placeholder {
       @include meta-label;
     }
   }
-  .search-button {
-    margin: 0;
-    @include form-element;
-    border-left-width: 0;
-    text-align: center;
+  .search-button,
+  .search-icon {
+    font-size: $input-font-size;
+    position: absolute;
+    padding: $form-spacing / 2;
+    right:0;
+    top:0;
+  }
+  &.column,
+  &.columns {
+    .search-button,
+    .search-icon {
+      right:$column-gutter / 2;
+    }
   }
 }
 
