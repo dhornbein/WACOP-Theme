@@ -75,7 +75,6 @@ $body-font-color: $dark;
 
 $padding: 20;
 
-
 // Label
 @mixin meta-label($color:false,$size:rem-calc(12),$weight:$font-weight-normal){
   font-family: $font-family-sans-serif;
@@ -334,6 +333,7 @@ $callout-bg: $blue;
 @mixin card($bkg:$gray) {
   @include clearfix;
   background-color: $bkg;
+  margin-bottom: rem-calc($padding);
   .status-bar {
     @include status-bar;
   }
@@ -409,6 +409,9 @@ ul.dl {
 
 .card-alert {
   @include card;
+  .title {
+    font-size: $h3-font-size;
+  }
   .meta-location {
     @include location-inline;
     @include meta-label;
