@@ -104,6 +104,17 @@
   @include status-bar;
 }
 
+.tmp-change-log {
+  @include status-bar($bkg:$gray,$color:$dark);
+  .item {
+    text-transform: none;
+  }
+}
+
+.tmp-filter-group {
+  @include filter-group;
+}
+
 // Home page
 
 .well {

@@ -168,20 +168,49 @@ textarea {
 }
 
 // -------------------------------------
+// Filter group
+@mixin filter-group($bkg: $gray, $padding: $padding) {
+  background-color: $bkg;
+  padding: rem-calc($padding);
+  .title {
+    font-size: $h4-font-size;
+    font-weight: bold;
+    a {
+      @include meta-label($size:$small-font-size,$weight:bold);
+      line-height: 0;
+      margin-left: rem-calc($padding);
+    }
+  }
+  .sub-title {
+    @include meta-label($color:$dark);
+  }
+
+  label { display: inline; }
+
+  .drop {
+    background-color: $gray-alt;
+    padding: 2px 6px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+
+}
+
+// -------------------------------------
 // Tabs
 @mixin tabs {}
 
 // -------------------------------------
 // Status Bar
 // Molecule that appears at the top of cards
-@mixin status-bar($bkg: $dark) {
+@mixin status-bar($bkg: $dark,$color:white) {
   @include clearfix;
   background-color: $bkg;
-  color: white;
+  color: $color;
   padding: 0 rem-calc($padding);
   
   a {
-    color: white;
+    color: $color;
     &:hover {
       
     }
@@ -209,7 +238,7 @@ textarea {
   }
 
   .item {
-    color: white;
+    color: $color;
     font-weight: normal;
     text-transform: uppercase;
   }
