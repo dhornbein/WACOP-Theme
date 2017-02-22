@@ -154,6 +154,20 @@ textarea {
 // =====================================
 
 // -------------------------------------
+// Filter box
+@mixin filter($bkg: $gray, $padding: $padding) {
+  background-color: $bkg;
+  padding: rem-calc($padding);
+  .button {
+    @include meta-label;
+  }
+  > .row:last-child {
+    input, 
+    .button { margin-bottom: 0; }
+  }
+}
+
+// -------------------------------------
 // Tabs
 @mixin tabs {}
 

@@ -72,6 +72,10 @@
   }
 }
 
+.tmp-filter {
+  @include filter;
+}
+
 .tmp-location-inline {
   @include location-inline;
 }
