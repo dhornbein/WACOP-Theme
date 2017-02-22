@@ -256,6 +256,9 @@ textarea {
   // interactive icons that appear on the right of status bar
   .controls {
     float: right;
+    .item {
+      cursor: pointer;
+    }
   }
 }
 
