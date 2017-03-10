@@ -30,8 +30,8 @@ table {
 
 .button {
   @include button($bg:$blue,$radius:3px);
-  &.disabled, &[disabled] { 
-    @include button-style($bg:lighten($blue,30%), $disabled:true); 
+  &.disabled, &[disabled] {
+    @include button-style($bg:lighten($blue,30%), $disabled:true);
     &:hover { color: inherit; }
   }
 
@@ -86,6 +86,45 @@ ul.dl {
 .dl {
   .dl-item {
 
+  }
+}
+
+// -------------------------------------
+// Data Table
+
+.dt-wrapper {
+  @include data-table();
+  .dt-export-options {
+    z-index: 1;
+    position: relative;
+  }
+  .dataTables_wrapper {
+    clear: none;
+    .dataTables_info {
+      clear: none;
+      float: left;
+    }
+    .dataTables_length {
+      float: left;
+      margin: rem-calc(-6) 0  rem-calc(6) rem-calc(10);
+    }
+  }
+  .dataTable_table {
+    margin-bottom: rem-calc(10);
+    table.dataTable thead th {
+      border-bottom: none;
+    }
+  }
+  .paging_full_numbers a.paginate_button {
+    @include meta-label();
+    background-color: $blue;
+    color: $white !important;
+    border:none;
+    border-radius: $global-radius;
+    padding: 3px 5px;
+    &:hover {
+      background-color: lighten($blue, 10%);
+    }
   }
 }
 

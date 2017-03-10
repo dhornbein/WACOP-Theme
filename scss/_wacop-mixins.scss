@@ -333,6 +333,40 @@ $padding: 20;
 // -------------------------------------
 // Data Table
 
+@mixin data-table(){
+  .dataTables_processing {}
+  .dataTables_info { float:left; }
+  .dataTables_length {
+    float: right;
+    margin: rem-calc(-6) rem-calc(10) rem-calc(6) 0;
+    select {
+      width: auto;
+      padding-right: 25px;
+      margin: 0;
+    }
+  }
+  .dataTable_table {
+    clear:both;
+    table { width: 100%; }
+  }
+  .dt-export-options {
+    float: right;
+    .dt-export {
+      display: inline;
+      cursor: pointer;
+      margin-left: rem-calc(5);
+      &.export_kml { @include icon(fa-map-o,$color:$blue,$margin:0); }
+      &.export_pdf { @include icon(fa-file-pdf-o,$color:$blue,$margin:0); }
+      &.export_rss { @include icon(fa-rss,$color:$blue,$margin:0); }
+      &.export_xls { @include icon(fa-file-excel-o,$color:$blue,$margin:0); }
+      &.export_xml { @include icon(fa-file-text-o,$color:$blue,$margin:0); }
+    }
+  }
+  .dataTables_paginate {
+    text-align: center;
+  }
+}
+
 // -------------------------------------
 // Data List
 
