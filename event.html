@@ -1,0 +1,81 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>WACOP Patterns</title>
+    <link rel='stylesheet' href='bower_components/components-font-awesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='stylesheets/app.css' />
+    <script src='bower_components/modernizr/modernizr.js'></script>
+  </head>
+  <body>
+
+<!-- START -->
+<main role='main' class='main'>
+  <div class='row'>
+   <div role='complementary' class='callout event-parent'>
+     <div class='callout-left'>
+       <h1 class='title'>Event Name</h1>
+       <a href='#' class='button radius small'><i class='fa fa-share-alt'></i> Share Event</a>
+       <a href='#' class='button radius small'><i class='fa fa-bookmark'></i> Bookmark Event</a>
+     </div>
+     <div class='callout-right meta'>
+       <p>
+         <span class='date-label'>Zero hour:</span> <span class='date'>Oct 26, 2016 @ 16:04</span>
+         <span class='date-label'>Closed:</span> <span class='date'>N/A</span>
+         <span class='location adr'>
+           <span class='locality'>San Francisco</span>,
+           <span class='region'>CA</span>
+         </span>
+       </p>
+       <p>
+         <a href='#'>4 incidents</a>
+         <a href='#'>12 resources</a>
+         <a href='#'>32 updates</a>
+       </p>
+       <span class='label {{=event.status}}'>Active</span>
+     </div>
+   </div>
+  </div>
+  <!-- Event description -->
+  <div class='row'>
+    <div class='small-12 columns'>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cumque dolor aut vitae blanditiis, cupiditate aliquam libero beatae ipsa aliquid labore mollitia laborum, distinctio ab incidunt id temporibus cum harum!</p>
+    </div>
+  </div>
+  <!-- End Event description -->
+  </div>
+  <!-- Event map -->
+  <div class='row well'>
+    <div class='small-12 columns'>
+      <!-- Event map goes here -->
+    </div>
+  </div>
+  <!-- End Event map -->
+
+  <!-- Event incidents and resources list -->
+  <div class='row well'>
+    <div class='medium-8 columns'>
+      <h3>Incidents</h3>
+      <a href='#'>See all incidents</a>
+      <!-- Event incidents list goes here -->
+    </div>
+    <div class='medium-4 columns'>
+      <h3>Resources</h3>
+      <a href='#'>See all resources</a>
+      <!-- Event resources list goes here -->
+    </div>
+  </div>
+  <!-- incidents and resources list -->
+
+  <!-- Updates / Directories / Tasks go here -->
+
+</main>
+<!-- END -->
+
+<script src='bower_components/foundation/js/vendor/jquery.js'></script>
+<script src='bower_components/foundation/js/vendor/fastclick.js'></script>
+<script src='bower_components/foundation/js/foundation.min.js'></script>
+<script src='js/app.js'></script>
+</body>
+</html>

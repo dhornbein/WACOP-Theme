@@ -1,0 +1,39 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>WACOP Patterns</title>
+    <link rel='stylesheet' href='bower_components/components-font-awesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='stylesheets/app.css' />
+    <script src='bower_components/modernizr/modernizr.js'></script>
+  </head>
+  <body>
+
+<!-- START -->
+<main role='main' class='main'>  
+  {{=XML(alerts)}}
+  {{=XML(events)}}
+  <!-- Event map -->
+  <div class='row well'>
+    <div class='medium-4 columns'>
+      <!-- Event map filter goes here -->
+    </div>
+    <div class='medium-8 columns'>
+      <!-- Event map goes here -->
+    </div>
+  </div>
+  <!-- End Event map -->
+
+  <!-- Event list -->
+  <div class='row well'>
+    <h3>Events</h3>
+    <!-- Event list goes here -->
+  </div>
+  <!-- End Event map -->
+
+</main>
+<!-- END -->
+
+</body>
+</html>
