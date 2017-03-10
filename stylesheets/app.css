@@ -9902,7 +9902,7 @@ textarea::-webkit-input-placeholder {
 .search-wrapper {
   position: relative;
 }
-/* line 377, ../scss/_wacop-mixins.scss */
+/* line 382, ../scss/_wacop-mixins.scss */
 .search-wrapper input {
   padding-right: 1.875rem;
 }
@@ -9966,7 +9966,7 @@ textarea::-webkit-input-placeholder {
 .search-wrapper input::-webkit-input-placeholder p, .search-wrapper input::-webkit-input-placeholder ul, .search-wrapper input::-webkit-input-placeholder h1, .search-wrapper input::-webkit-input-placeholder h2, .search-wrapper input::-webkit-input-placeholder h3, .search-wrapper input::-webkit-input-placeholder h4, .search-wrapper input::-webkit-input-placeholder h5, .search-wrapper input::-webkit-input-placeholder h6 {
   font-size: inherit;
 }
-/* line 383, ../scss/_wacop-mixins.scss */
+/* line 388, ../scss/_wacop-mixins.scss */
 .search-wrapper .search-button,
 .search-wrapper .search-icon {
   font-size: 0.875rem;
@@ -9975,7 +9975,7 @@ textarea::-webkit-input-placeholder {
   right: 0;
   top: 0;
 }
-/* line 393, ../scss/_wacop-mixins.scss */
+/* line 398, ../scss/_wacop-mixins.scss */
 .search-wrapper.column .search-button,
 .search-wrapper.column .search-icon, .search-wrapper.columns .search-button,
 .search-wrapper.columns .search-icon {
@@ -10074,14 +10074,14 @@ ul.dl ol {
 .callout.event-parent h1.subheader, .callout.event-parent h2.subheader, .callout.event-parent h3.subheader, .callout.event-parent h4.subheader, .callout.event-parent h5.subheader, .callout.event-parent h6.subheader {
   line-height: 1.4;
 }
-/* line 412, ../scss/_wacop-mixins.scss */
+/* line 417, ../scss/_wacop-mixins.scss */
 .callout.event-parent .callout-left {
   padding-left: 0;
   padding-right: 0;
   width: 50%;
   float: left;
 }
-/* line 415, ../scss/_wacop-mixins.scss */
+/* line 420, ../scss/_wacop-mixins.scss */
 .callout.event-parent .callout-right {
   padding-left: 0;
   padding-right: 0;
@@ -10116,7 +10116,7 @@ ul.dl ol {
 .card-event:after {
   clear: both;
 }
-/* line 427, ../scss/_wacop-mixins.scss */
+/* line 432, ../scss/_wacop-mixins.scss */
 .card-event .status-bar {
   background-color: #4B4B4B;
   color: white;
@@ -10131,57 +10131,57 @@ ul.dl ol {
 .card-event .status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .card-event .status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .card-event .status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .card-event .status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .card-event .status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .card-event .status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .card-event .status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -10239,28 +10239,28 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .card-event .status-bar .controls .item {
   cursor: pointer;
 }
-/* line 431, ../scss/_wacop-mixins.scss */
+/* line 436, ../scss/_wacop-mixins.scss */
 .card-event > .body,
 .card-event > .footer {
   padding: 0 1.25rem;
 }
-/* line 435, ../scss/_wacop-mixins.scss */
+/* line 440, ../scss/_wacop-mixins.scss */
 .card-event .body {
   padding-top: 1.25rem;
 }
@@ -10282,7 +10282,7 @@ ul.dl ol {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 345, ../scss/_wacop-mixins.scss */
+/* line 350, ../scss/_wacop-mixins.scss */
 .card-event .event-date-location .date-label {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.75rem;
@@ -10315,7 +10315,7 @@ ul.dl ol {
 .card-alert:after {
   clear: both;
 }
-/* line 427, ../scss/_wacop-mixins.scss */
+/* line 432, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar {
   background-color: #4B4B4B;
   color: white;
@@ -10330,57 +10330,57 @@ ul.dl ol {
 .card-alert .status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -10438,28 +10438,28 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .card-alert .status-bar .controls .item {
   cursor: pointer;
 }
-/* line 431, ../scss/_wacop-mixins.scss */
+/* line 436, ../scss/_wacop-mixins.scss */
 .card-alert > .body,
 .card-alert > .footer {
   padding: 0 1.25rem;
 }
-/* line 435, ../scss/_wacop-mixins.scss */
+/* line 440, ../scss/_wacop-mixins.scss */
 .card-alert .body {
   padding-top: 1.25rem;
 }
@@ -10506,7 +10506,7 @@ ul.dl ol {
 .incident-profile:after {
   clear: both;
 }
-/* line 427, ../scss/_wacop-mixins.scss */
+/* line 432, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar {
   background-color: #4B4B4B;
   color: white;
@@ -10521,57 +10521,57 @@ ul.dl ol {
 .incident-profile .status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -10629,28 +10629,28 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .incident-profile .status-bar .controls .item {
   cursor: pointer;
 }
-/* line 431, ../scss/_wacop-mixins.scss */
+/* line 436, ../scss/_wacop-mixins.scss */
 .incident-profile > .body,
 .incident-profile > .footer {
   padding: 0 1.25rem;
 }
-/* line 435, ../scss/_wacop-mixins.scss */
+/* line 440, ../scss/_wacop-mixins.scss */
 .incident-profile .body {
   padding-top: 1.25rem;
 }
@@ -10684,7 +10684,7 @@ ul.dl ol {
   background-color: #DDDDDD;
   padding: 0.625rem;
 }
-/* line 366, ../scss/_wacop-mixins.scss */
+/* line 371, ../scss/_wacop-mixins.scss */
 .incident-profile .incident-data .incident-location .box .geo-location {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.75rem;
@@ -10720,7 +10720,7 @@ ul.dl ol {
   background-color: #DDDDDD;
   padding: 0.625rem;
 }
-/* line 355, ../scss/_wacop-mixins.scss */
+/* line 360, ../scss/_wacop-mixins.scss */
 .incident-profile .incident-data .incident-date .box .date-label {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.75rem;
@@ -10776,7 +10776,7 @@ ul.dl ol {
 .card-notification:after {
   clear: both;
 }
-/* line 427, ../scss/_wacop-mixins.scss */
+/* line 432, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar {
   background-color: #4B4B4B;
   color: white;
@@ -10791,57 +10791,57 @@ ul.dl ol {
 .card-notification .status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -10899,28 +10899,28 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .card-notification .status-bar .controls .item {
   cursor: pointer;
 }
-/* line 431, ../scss/_wacop-mixins.scss */
+/* line 436, ../scss/_wacop-mixins.scss */
 .card-notification > .body,
 .card-notification > .footer {
   padding: 0 1.25rem;
 }
-/* line 435, ../scss/_wacop-mixins.scss */
+/* line 440, ../scss/_wacop-mixins.scss */
 .card-notification .body {
   padding-top: 1.25rem;
 }
@@ -10948,7 +10948,7 @@ ul.dl ol {
 .card-post:after {
   clear: both;
 }
-/* line 427, ../scss/_wacop-mixins.scss */
+/* line 432, ../scss/_wacop-mixins.scss */
 .card-post .status-bar {
   background-color: #4B4B4B;
   color: white;
@@ -10963,57 +10963,57 @@ ul.dl ol {
 .card-post .status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .card-post .status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .card-post .status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .card-post .status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .card-post .status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .card-post .status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .card-post .status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -11071,28 +11071,28 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .card-post .status-bar .controls .item {
   cursor: pointer;
 }
-/* line 431, ../scss/_wacop-mixins.scss */
+/* line 436, ../scss/_wacop-mixins.scss */
 .card-post > .body,
 .card-post > .footer {
   padding: 0 1.25rem;
 }
-/* line 435, ../scss/_wacop-mixins.scss */
+/* line 440, ../scss/_wacop-mixins.scss */
 .card-post .body {
   padding-top: 1.25rem;
 }
@@ -11354,7 +11354,7 @@ ul.dl ol {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 345, ../scss/_wacop-mixins.scss */
+/* line 350, ../scss/_wacop-mixins.scss */
 .tmp-box-date-location .date-label {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.75rem;
@@ -11372,7 +11372,7 @@ ul.dl ol {
   background-color: #DDDDDD;
   padding: 1.25rem;
 }
-/* line 355, ../scss/_wacop-mixins.scss */
+/* line 360, ../scss/_wacop-mixins.scss */
 .tmp-box-date .date-label {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.75rem;
@@ -11425,14 +11425,14 @@ ul.dl ol {
 .tmp-callout h1.subheader, .tmp-callout h2.subheader, .tmp-callout h3.subheader, .tmp-callout h4.subheader, .tmp-callout h5.subheader, .tmp-callout h6.subheader {
   line-height: 1.4;
 }
-/* line 412, ../scss/_wacop-mixins.scss */
+/* line 417, ../scss/_wacop-mixins.scss */
 .tmp-callout .callout-left {
   padding-left: 0;
   padding-right: 0;
   width: 50%;
   float: left;
 }
-/* line 415, ../scss/_wacop-mixins.scss */
+/* line 420, ../scss/_wacop-mixins.scss */
 .tmp-callout .callout-right {
   padding-left: 0;
   padding-right: 0;
@@ -11445,7 +11445,7 @@ ul.dl ol {
   background-color: #DDDDDD;
   padding: 1.25rem;
 }
-/* line 366, ../scss/_wacop-mixins.scss */
+/* line 371, ../scss/_wacop-mixins.scss */
 .tmp-box-location .geo-location {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.75rem;
@@ -11484,7 +11484,7 @@ ul.dl ol {
 .tmp-card:after {
   clear: both;
 }
-/* line 427, ../scss/_wacop-mixins.scss */
+/* line 432, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar {
   background-color: #4B4B4B;
   color: white;
@@ -11499,57 +11499,57 @@ ul.dl ol {
 .tmp-card .status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -11607,28 +11607,28 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .tmp-card .status-bar .controls .item {
   cursor: pointer;
 }
-/* line 431, ../scss/_wacop-mixins.scss */
+/* line 436, ../scss/_wacop-mixins.scss */
 .tmp-card > .body,
 .tmp-card > .footer {
   padding: 0 1.25rem;
 }
-/* line 435, ../scss/_wacop-mixins.scss */
+/* line 440, ../scss/_wacop-mixins.scss */
 .tmp-card .body {
   padding-top: 1.25rem;
 }
@@ -11648,57 +11648,57 @@ ul.dl ol {
 .tmp-status-bar:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .tmp-status-bar a {
   color: white;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .tmp-status-bar.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .tmp-status-bar.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .tmp-status-bar ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .tmp-status-bar ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .tmp-status-bar ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .item {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -11756,19 +11756,19 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .tmp-status-bar .controls .item {
   cursor: pointer;
 }
@@ -11788,57 +11788,57 @@ ul.dl ol {
 .tmp-change-log:after {
   clear: both;
 }
-/* line 246, ../scss/_wacop-mixins.scss */
+/* line 251, ../scss/_wacop-mixins.scss */
 .tmp-change-log a {
   color: #4B4B4B;
 }
-/* line 253, ../scss/_wacop-mixins.scss */
+/* line 258, ../scss/_wacop-mixins.scss */
 .tmp-change-log.highlight {
   background-color: #4DB988;
 }
-/* line 256, ../scss/_wacop-mixins.scss */
+/* line 261, ../scss/_wacop-mixins.scss */
 .tmp-change-log.mute {
   background-color: #888;
 }
-/* line 261, ../scss/_wacop-mixins.scss */
+/* line 266, ../scss/_wacop-mixins.scss */
 .tmp-change-log ul {
   margin: 0;
   line-height: 2;
 }
-/* line 264, ../scss/_wacop-mixins.scss */
+/* line 269, ../scss/_wacop-mixins.scss */
 .tmp-change-log ul > li {
   display: inline-block;
   list-style: none;
   margin-left: 0.75rem;
 }
-/* line 269, ../scss/_wacop-mixins.scss */
+/* line 274, ../scss/_wacop-mixins.scss */
 .tmp-change-log ul:first-child > li.icon:first-child {
   margin-left: -0.625rem;
 }
-/* line 274, ../scss/_wacop-mixins.scss */
+/* line 279, ../scss/_wacop-mixins.scss */
 .tmp-change-log .item {
   color: #4B4B4B;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 279, ../scss/_wacop-mixins.scss */
+/* line 284, ../scss/_wacop-mixins.scss */
 .tmp-change-log .item.primary {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 283, ../scss/_wacop-mixins.scss */
+/* line 288, ../scss/_wacop-mixins.scss */
 .tmp-change-log .item.secondary {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-/* line 287, ../scss/_wacop-mixins.scss */
+/* line 292, ../scss/_wacop-mixins.scss */
 .tmp-change-log .item.border {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.25);
   border-width: 0 1px;
   padding: 0 0.75rem;
 }
-/* line 292, ../scss/_wacop-mixins.scss */
+/* line 297, ../scss/_wacop-mixins.scss */
 .tmp-change-log .item.border + .item.border {
   margin-left: -1pt;
   border-left: none;
@@ -11896,19 +11896,19 @@ ul.dl ol {
   background-color: #7EB94D;
   border-radius: 30px;
 }
-/* line 311, ../scss/_wacop-mixins.scss */
+/* line 316, ../scss/_wacop-mixins.scss */
 .tmp-change-log .status-bar-left {
   float: left;
 }
-/* line 313, ../scss/_wacop-mixins.scss */
+/* line 318, ../scss/_wacop-mixins.scss */
 .tmp-change-log .status-bar-left > li:first-child {
   margin-left: 0;
 }
-/* line 320, ../scss/_wacop-mixins.scss */
+/* line 325, ../scss/_wacop-mixins.scss */
 .tmp-change-log .controls {
   float: right;
 }
-/* line 322, ../scss/_wacop-mixins.scss */
+/* line 327, ../scss/_wacop-mixins.scss */
 .tmp-change-log .controls .item {
   cursor: pointer;
 }
@@ -11954,11 +11954,21 @@ ul.dl ol {
 .tmp-filter-group .sub-title p, .tmp-filter-group .sub-title ul, .tmp-filter-group .sub-title h1, .tmp-filter-group .sub-title h2, .tmp-filter-group .sub-title h3, .tmp-filter-group .sub-title h4, .tmp-filter-group .sub-title h5, .tmp-filter-group .sub-title h6 {
   font-size: inherit;
 }
-/* line 222, ../scss/_wacop-mixins.scss */
+/* line 221, ../scss/_wacop-mixins.scss */
+.tmp-filter-group > ul,
+.tmp-filter-group ul.item-group {
+  margin: 0;
+}
+/* line 224, ../scss/_wacop-mixins.scss */
+.tmp-filter-group > ul li,
+.tmp-filter-group ul.item-group li {
+  list-style: none;
+}
+/* line 227, ../scss/_wacop-mixins.scss */
 .tmp-filter-group label {
   display: inline;
 }
-/* line 224, ../scss/_wacop-mixins.scss */
+/* line 229, ../scss/_wacop-mixins.scss */
 .tmp-filter-group .drop {
   background-color: #DDDDDD;
   padding: 2px 6px;
