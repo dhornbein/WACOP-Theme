@@ -95,14 +95,14 @@ $row-width: rem-calc(2000);
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
+$silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
+$gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
@@ -110,7 +110,7 @@ $row-width: rem-calc(2000);
 // $monsoon     : #777777;
 // $steel       : #666666;
 // $charcoal    : #555555;
-// $tuatara     : #444444;
+$tuatara     : #4B4B4B;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
@@ -1295,8 +1295,9 @@ $input-box-shadow: none;
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: $white;
-// $table-even-row-bg: $snow;
+$table-bg: $gainsboro;
+$table-even-row-bg: $white;
+$table-odd-row-bg: $silver;
 
 // These control the table cell border style
 // $table-border-style: solid;
@@ -1304,7 +1305,7 @@ $input-box-shadow: none;
 // $table-border-color: $gainsboro;
 
 // These control the table head styles
-// $table-head-bg: $white-smoke;
+$table-head-bg: $white;
 // $table-head-font-size: rem-calc(14);
 // $table-head-font-color: $jet;
 // $table-head-font-weight: $font-weight-bold;

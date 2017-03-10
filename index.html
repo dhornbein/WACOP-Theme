@@ -247,7 +247,7 @@
     </div>
 
     <div class="row">
-      <div class="large-3 columns">
+      <div class="large-4 columns">
         <h3>Filter Box</h3>
         <form class="tmp-filter">
           <div class="row">
@@ -278,27 +278,78 @@
           </div>
           <div class='row'>
             <div class='small-12 column'>
-              <label>Filter
-                <select>
-                  <option value='husker'>Husker</option>
-                  <option value='starbuck'>Starbuck</option>
-                  <option value='hotdog'>Hot Dog</option>
-                  <option value='apollo'>Apollo</option>
-                </select>
-              </label>
+              <!-- fieldset from incident filter -->
+              <div id="incident-event_incident_closed-options-filter__row">
+                <fieldset>
+                  <legend>
+                    <label for="incident-event_incident_closed-options-filter" id="incident-event_incident_closed-options-filter__label">Status:</label>
+                  </legend>
+                  <input class="filter-widget-data options-filter-data" id="incident-event_incident_closed-options-filter-data" type="hidden" value="~.closed__belongs">
+                  <select class="groupedopts-filter-widget groupedopts-widget options-filter active" id="incident-event_incident_closed-options-filter" name="incident-event_incident_closed-options-filter" style="display: none;">
+                    <option value="*">All</option>
+                    <option value="True">Closed</option>
+                    <option value="False">Open</option>
+                  </select>
+                  <table class="s3-groupedopts-widget">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="radio" id="s3-groupedopts-option-0-0" name="s3-groupedopts-0" class="s3-groupedopts-option" value="*">
+                          <label for="s3-groupedopts-option-0-0">All</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="s3-groupedopts-option-0-1" name="s3-groupedopts-0" class="s3-groupedopts-option" value="True">
+                          <label for="s3-groupedopts-option-0-1" class="inactive">Closed</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="s3-groupedopts-option-0-2" name="s3-groupedopts-0" class="s3-groupedopts-option" value="False">
+                          <label for="s3-groupedopts-option-0-2" class="inactive">Open</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+              </div>
+              <!-- end fieldset -->
             </div>
           </div>
           <div class="row">
             <div class="small-12 column">
               <label for='filter-test'>Filter</label>
-              <div class='row collapse'>
-                <div class='small-10 columns'>
-                  <input type='text' name='filter-test' placeholder='N/A'>
+              <div class='input-button-wrapper'>
+                <input type='text' name='filter-test' placeholder='N/A'>
+                <a href='#' class='button'><i class='fa fa-close'></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 column">
+              <label for='filter-test'>Filter</label>
+              <div class='input-button-wrapper'>
+                <a href='#' class='button'><i class='fa fa-close'></i></a>
+                <input type='text' name='filter-test' placeholder='N/A'>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 column">
+              <!-- datepicker taken from system -->
+              <div class="range-filter-field">
+                <div class="range-filter-label">
+                  <label for="post-cms_post_date-date-filter-ge">Start Time/Date:</label>
                 </div>
-                <div class='small-2 columns'>
-                  <a href='#' class='button postfix'><i class='fa fa-close'></i></a>
+                <div class="range-filter-widget">
+                  <div class="calendar-widget-container" id="post-cms_post_date-date-filter-ge-calendar-widget">
+                    <input class="date-filter-input datetimepicker hasDatepicker" id="post-cms_post_date-date-filter-ge" name="post-cms_post_date-date-filter-ge" type="text">
+                    <button class="btn date-clear-btn" type="button">Clear</button>
+                  </div>
                 </div>
               </div>
+              <!-- end datepicker -->
             </div>
           </div>
           <div class="row">
@@ -393,8 +444,7 @@
           </div>
         </div>
       </div>
-      <div class="large-3 columns"></div>
-      <div class="large-3 columns"></div>
+      <div class="large-6 columns"></div>
     </div>
 
     <div class='row'>
@@ -930,8 +980,143 @@
         </ul>
       </div>
     </div>
+
+    <div class='row'>
+      <div class='large-12 column'>
+        <hr>
+        <h2>Lists</h2>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      </div>
+    </div>
     
-    <br><br><br><br>
+    <div class="row">
+      <div class="small-12 column">
+        <div class="section-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="table" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">
+          <div class="widget-container" id="summary-0-container">
+            <div id="table-container">
+              <form action="#" class="dt-wrapper" enctype="multipart/form-data" method="post">
+                <div class="dt-export-options">
+                  <a class="permalink" href="/eden/event/incident/summary">Link to this result</a> | <span class="list_formats">Export as:<div class="dt-export export_kml" data-extension="kml" data-url="/eden/event/incident?w=summary-0" title="Export in KML format">
+                    
+                  </div>
+                  <div class="dt-export export_pdf" data-extension="pdf" data-url="/eden/event/incident?w=summary-0" title="Export in PDF format">
+                    
+                  </div>
+                  <div class="dt-export export_rss" data-extension="rss" data-url="/eden/event/incident?w=summary-0" title="Export in RSS format">
+                    
+                  </div>
+                  <div class="dt-export export_xls" data-extension="xls" data-url="/eden/event/incident?w=summary-0" title="Export in XLS format">
+                    
+                  </div>
+                  <div class="dt-export export_xml" data-extension="xml" data-url="/eden/event/incident?w=summary-0" title="Export in XML format">
+                    
+                  </div>
+                </span>
+              </div>
+              <div id="summary-0_wrapper" class="dataTables_wrapper no-footer">
+                <div id="summary-0_processing" class="dataTables_processing" style="display: none;">Processing...</div>
+                <div class="dataTables_info" id="summary-0_info" role="status" aria-live="polite">Showing 1 to 25 of 165 entries</div>
+                <div class="dataTables_length" id="summary-0_length">
+                  <label>Show <select name="summary-0_length" aria-controls="summary-0" class="
+                    ">
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="-1">All</option>
+                  </select> entries</label>
+                </div>
+                <div class="dataTable_table">
+                  <table class="responsive dataTable display no-footer dtr-inline" id="summary-0" aria-describedby="summary-0_info" role="grid">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting_disabled" rowspan="1" colspan="1" aria-label=" "> </th>
+                        <th class="sorting" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th>
+                        <th class="sorting" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">Name</th>
+                        <th class="sorting" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-label="Type: activate to sort column ascending">Type</th>
+                        <th class="sorting" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-label="Location: activate to sort column ascending">Location</th>
+                        <th class="sorting_desc" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-sort="descending" aria-label="Start: activate to sort column ascending">Start</th>
+                        <th class="sorting" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-label="End: activate to sort column ascending">End</th>
+                        <th class="sorting" tabindex="0" aria-controls="summary-0" rowspan="1" colspan="1" aria-label="Event: activate to sort column ascending">Event</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td class="actions">
+                          <a db_id="18" class="action-btn edit" href="/eden/event/incident/18/custom" title="Open">Open</a>
+                          <a db_id="18" class="delete-btn" href="/eden/event/incident/18/delete" title="Delete">Delete</a>
+                        </td>
+                        <td>Open</td>
+                        <td>6112</td>
+                        <td>-</td>
+                        <td>
+                          <a onclick="s3_viewMap(1250,340,'False');return false" style="cursor:pointer;cursor:hand">
+                            <span class="gis-display-feature">20 Broad St, 10005, United States<i class="fa-map-marker fa" title="40.706498 N, 74.011098 W"> </i>
+                            </span>
+                          </a>
+                        </td>
+                        <td class="sorting_1">Aug 03 2015 13:38</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr role="row" class="even">
+                          <td class="actions">
+                            <a db_id="31" class="action-btn edit" href="/eden/event/incident/31/custom" title="Open">Open</a>
+                            <a db_id="31" class="delete-btn" href="/eden/event/incident/31/delete" title="Delete">Delete</a>
+                          </td>
+                          <td>Open</td>
+                          <td>15_08_03 RCETTWEST 0001</td>
+                          <td>-</td>
+                          <td>
+                            <a onclick="s3_viewMap(1271,340,'False');return false" style="cursor:pointer;cursor:hand">
+                              <span class="gis-display-feature">5TH ST, 92277, United States<i class="fa-map-marker fa" title="34.232712 N, 116.060698 W"> </i>
+                              </span>
+                            </a>
+                          </td>
+                          <td class="sorting_1">Aug 03 2015 13:30</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td class="actions">
+                              <a db_id="32" class="action-btn edit" href="/eden/event/incident/32/custom" title="Open">Open</a>
+                              <a db_id="32" class="delete-btn" href="/eden/event/incident/32/delete" title="Delete">Delete</a>
+                            </td>
+                            <td>Open</td>
+                            <td>171</td>
+                            <td>CrimeOrTerrorism_Terrorism_Bomb_Explosion</td>
+                            <td>
+                              <a onclick="s3_viewMap(1380,340,'False');return false" style="cursor:pointer;cursor:hand">ID: 1380</a>
+                            </td>
+                            <td class="sorting_1">Aug 03 2015 10:55</td>
+                            <td>-</td>
+                            <td>Stadium Terror Attack</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="dataTables_paginate paging_full_numbers" id="summary-0_paginate" style="display: block;">
+                    <a class="paginate_button first disabled" aria-controls="summary-0" data-dt-idx="0" tabindex="0" id="summary-0_first">First</a>
+                    <a class="paginate_button previous disabled" aria-controls="summary-0" data-dt-idx="1" tabindex="0" id="summary-0_previous">Previous</a>
+                    <span>
+                      <a class="paginate_button current" aria-controls="summary-0" data-dt-idx="2" tabindex="0">1</a>
+                      <a class="paginate_button " aria-controls="summary-0" data-dt-idx="3" tabindex="0">2</a>
+                      <a class="paginate_button " aria-controls="summary-0" data-dt-idx="4" tabindex="0">3</a>
+                      <a class="paginate_button " aria-controls="summary-0" data-dt-idx="5" tabindex="0">4</a>
+                      <a class="paginate_button " aria-controls="summary-0" data-dt-idx="6" tabindex="0">5</a>
+                      <a class="paginate_button " aria-controls="summary-0" data-dt-idx="7" tabindex="0">6</a>
+                      <a class="paginate_button " aria-controls="summary-0" data-dt-idx="8" tabindex="0">7</a>
+                    </span>
+                    <a class="paginate_button next" aria-controls="summary-0" data-dt-idx="9" tabindex="0" id="summary-0_next">Next</a>
+                    <a class="paginate_button last" aria-controls="summary-0" data-dt-idx="10" tabindex="0" id="summary-0_last">Last</a>
+                  </div>
+                  <div class="dataTables_info">Showing 1 to 25 of 165 entries</div>
+                </div>
+                <input type="hidden" value="300" name="_utc_offset">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src='bower_components/jquery/dist/jquery.min.js'></script>
     <script src='bower_components/foundation/js/foundation.min.js'></script>
