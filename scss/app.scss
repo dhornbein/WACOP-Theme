@@ -54,21 +54,21 @@
     }
   }
   .gray {
-    background-color: $gray;
+    background-color: $silver;
     &::after {
-      content: "#{$gray}"
+      content: "#{$silver}"
     }
   }
   .gray-alt {
-    background-color: $gray-alt;
+    background-color: $gainsboro;
     &::after {
-      content: "#{$gray-alt}"
+      content: "#{$gainsboro}"
     }
   }
   .dark {
-    background-color: $dark;
+    background-color: $darksteel;
     &::after {
-      content: "#{$dark}"
+      content: "#{$darksteel}"
     }
   }
 }
@@ -106,7 +106,7 @@
 }
 
 .tmp-change-log {
-  @include status-bar($bkg:$gray,$color:$dark);
+  @include status-bar($bkg:$silver,$color:$darksteel);
   .item {
     text-transform: none;
   }

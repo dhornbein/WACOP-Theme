@@ -39,7 +39,7 @@
 
 @mixin priority-icon($type:'I') {
   &::before {
-    color: $dark;
+    color: $darksteel;
     display: inline-block;
     font-size: small;
     font-weight: bold;
@@ -74,24 +74,6 @@
 // =====================================
 // 1. Atoms
 // =====================================
-
-// Colors
-
-$blue:      #4D7EB9;
-$mint:      #4DB988;
-$red:       #FF5959;
-$yellow:    #E5AA07;
-$green:     #7EB94D;
-
-$gray:      #EFEFEF;
-$gray-alt:  #DDDDDD;
-$dark:      #4B4B4B;
-
-$body-font-color: $dark;
-
-// defaults
-
-$padding: 20;
 
 // Label
 @mixin meta-label($color:false,$size:rem-calc(12),$weight:$font-weight-normal){
@@ -147,12 +129,12 @@ $padding: 20;
   }
 }
 
-@mixin fieldset($side-padding: $padding){
+@mixin fieldset($side-padding: $global-padding){
   fieldset {
     border-left-width: 0;
     border-right-width: 0;
-    margin-left: rem-calc(-$side-padding);
-    margin-right: rem-calc(-$side-padding);
+    margin-left: -$side-padding;
+    margin-right: -$side-padding;
   }
 }
 
@@ -162,9 +144,9 @@ $padding: 20;
 
 // -------------------------------------
 // Filter box
-@mixin filter($bkg: $gray, $padding: $padding) {
+@mixin filter($bkg: $silver, $padding: $global-padding) {
   background-color: $bkg;
-  padding: rem-calc($padding);
+  padding: $padding;
   .button {
     @include meta-label;
   }
@@ -203,20 +185,20 @@ $padding: 20;
 
 // -------------------------------------
 // Filter group
-@mixin filter-group($bkg: $gray, $padding: $padding) {
+@mixin filter-group($bkg: $silver, $padding: $global-padding) {
   background-color: $bkg;
-  padding: rem-calc($padding);
+  padding: $padding;
   .title {
     font-size: $h4-font-size;
     font-weight: bold;
     a {
       @include meta-label($size:$small-font-size,$weight:bold);
       line-height: 0;
-      margin-left: rem-calc($padding);
+      margin-left: $padding;
     }
   }
   .sub-title {
-    @include meta-label($color:$dark);
+    @include meta-label($color:$darksteel);
   }
   > ul,
   ul.item-group {
@@ -227,7 +209,7 @@ $padding: 20;
   label { display: inline; }
 
   .drop {
-    background-color: $gray-alt;
+    background-color: $gainsboro;
     padding: 2px 6px;
     font-weight: bold;
     border-radius: 3px;
@@ -242,11 +224,11 @@ $padding: 20;
 // -------------------------------------
 // Status Bar
 // Molecule that appears at the top of cards
-@mixin status-bar($bkg: $dark,$color:white) {
+@mixin status-bar($bkg: $darksteel,$color:white) {
   @include clearfix;
   background-color: $bkg;
   color: $color;
-  padding: 0 rem-calc($padding);
+  padding: 0 $global-padding;
 
   a {
     color: $color;
@@ -375,9 +357,9 @@ $padding: 20;
 // call out boxes
 
   // Date Location box
-  @mixin box-date-location($bkg: $gray-alt, $padding: $padding) {
+  @mixin box-date-location($bkg: $gainsboro, $padding: $global-padding) {
     background-color: $bkg;
-    padding: rem-calc($padding);
+    padding: $padding;
     .adr {
       @include location-inline;
     }
@@ -388,9 +370,9 @@ $padding: 20;
   }
 
   // Date box
-  @mixin box-date($bkg: $gray-alt, $padding: $padding) {
+  @mixin box-date($bkg: $gainsboro, $padding: $global-padding) {
     background-color: $bkg;
-    padding: rem-calc($padding);
+    padding: $padding;
     .date-label {
       @include meta-label;
     }
@@ -398,9 +380,9 @@ $padding: 20;
   }
 
   // Location box
-  @mixin box-location($bkg: $gray-alt, $padding: $padding) {
+  @mixin box-location($bkg: $gainsboro, $padding: $global-padding) {
     background-color: $bkg;
-    padding: rem-calc($padding);
+    padding: $padding;
     .adr {}
     .geo-location {
       @include meta-label;
@@ -459,20 +441,20 @@ $callout-bg: $blue;
 // -------------------------------------
 // Card
 // a box that displays information
-@mixin card($bkg:$gray) {
+@mixin card($bkg:$silver) {
   @include clearfix;
   background-color: $bkg;
-  margin-bottom: rem-calc($padding);
+  margin-bottom: $global-padding;
   .status-bar {
     @include status-bar;
   }
 
   > .body,
   > .footer {
-    padding: 0 rem-calc($padding);
+    padding: 0 $global-padding;
   }
   .body {
-    padding-top: rem-calc($padding);
+    padding-top: $global-padding;
   }
   .footer {}
 }
