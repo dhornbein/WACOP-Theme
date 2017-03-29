@@ -424,7 +424,7 @@
 
 // -------------------------------------
 // Callout
-$callout-bg: $blue;
+$callout-bg: $base;
 
 @mixin callout($bg:$callout-bg) {
   @include clearfix;
