@@ -69,6 +69,27 @@ textarea {
 }
 
 // -------------------------------------
+// Tabs
+.tabs {
+  .tab-title:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  .tab-title a {
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: transparent;
+    padding: 0 rem-calc(4);
+    &:hover {
+      border-bottom-color: inherit;
+    }
+  }
+  .tab-title.active a {
+    border-bottom-color: inherit;
+    font-weight: bold;
+  }
+}
+
+// -------------------------------------
 // Data List
 // list of data
 ul.data-list,
